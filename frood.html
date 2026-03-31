@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Formulario de registro </h1>
+
+    <form action="form.html" method="get">
+
+        <label for="txtnombre">Nombre completo</label>
+        <input type="text" id="txtnombre" name="txtnombre" 
+             placeholder="Ej. Juan perez">
+        <br><br>
+
+        
+        <label for="txtnombre">Num de telefono</label>
+        <input type="tel" id="txttle" name="txttle" required
+             pattern="[0-9]{10}"
+             aria-placeholder="10 digitos(Ej. 93823)" >
+        <br><br>
+
+
+        <label for="txtnombre">Direccion de correo</label>
+        <input type="email" id="txtnombre" name="txtnombre" 
+             placeholder="Ejemplo@correo.com" required>
+        <input type="submit" value="registrar ">
+        <br><br>
+
+
+        <label for="txtnombre">Ingrese contraseña</label>
+        <input type="password" id="txtpass" name="txtpass" 
+             placeholder="Minimo 8 digitos" required>
+        <br><br>
+
+
+        <label for="txtnombre">Confirme contraseña </label>
+        <input type="password" id="txtpass" name="txtpass" 
+             placeholder="Repite contraseña " required>
+        <br><br>
+
+
+        <label for="fecha-nac">Selecciona fecha de nacimiento</label>
+        <input type="date" id="fecha-nac" name="fecha-nac">
+
+
+        <input type="submit" value="registrar">
+
+
+        <p>Genero</p>
+        <input type="radio" id="Hombre" name="genero" value="Hombre">
+        <label for="Hombre">Hombre</label><br>
+        <br>
+
+
+        <input type="radio" id="mujer" name="genero" value="mujer">
+        <label for="mujer">mujer</label><br>
+        <br>
+
+
+        <input type="radio" id="otro" name="genero" value="otro">
+        <label for="otro">otro</label><br><br>
+        <br><br>
+
+
+        <input type="checkbox" id="terminos" name="terminos" required>
+        <label for="terminos">Acepto los terminos y condiciones</label>
+        <br><br>
+
+        <input type="submit" value="resgistrarme">
+
+        
+
+
+
+    </form>
+
+</body>
+</html>
